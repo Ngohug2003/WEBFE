@@ -1,4 +1,4 @@
-app.controller('listProductCtrl', function ($scope, $http,$routeParams) {
+app.controller('listProductCtrl', function ($scope, $http) {
     // console.log("Thành công");
     $scope.danhsachProduct = [];
 
