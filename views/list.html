@@ -1,0 +1,28 @@
+<h2>Danh sách sản phẩm </h2>
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr >
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+            <!-- <th>Trạng thái</th> -->
+            <th>Tương tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in danhsachProduct track by $index">
+            <td>{{$index + 1}}</td>
+            <td>{{item.name}}</td>
+            <td style="width: 100px; height: 100px;"  class="border rounded bg-light overflow-hidden d-flex justify-content-center align-items-center " >
+                <img class="mw-100 mh-100 " ng-src="{{item.image}}" alt="">
+            </td>
+            <td>{{item.price}}</td>
+            <td>
+                <a class="btn btn-danger " href="">Xóa</a>
+                <a class="btn btn-warning" href="#!edit/{{item.id}}">Sửa</a>
+                <a class="btn btn-secondary" href="#!detail/{{item.id}}">Xem</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

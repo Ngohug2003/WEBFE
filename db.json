@@ -1,0 +1,52 @@
+{
+  "product": [
+    {
+      "name": "name 1",
+      "image": "img/product-6.jpg",
+      "price": 45,
+      "id": "1"
+    },
+    {
+      "name": "name 2 update",
+      "image": "img/product-7.jpg",
+      "price": 68,
+      "id": "2"
+    },
+    {
+      "name": "name 3",
+      "image": "img/product-8.jpg",
+      "price": 38,
+      "id": "3"
+    },
+    {
+      "name": "name 4",
+      "image": "img/product-9.jpg",
+      "price": 72,
+      "id": "4"
+    },
+    {
+      "name": "name 5",
+      "image": "img/product-10.jpg",
+      "price": 7,
+      "id": "5"
+    },
+    {
+      "name": "name 6",
+      "image": "img/product-11.jpg",
+      "price": 45,
+      "id": "6"
+    },
+    {
+      "name": "name 7",
+      "image": "img/product-12.jpg",
+      "price": 13,
+      "id": "7"
+    },
+    {
+      "id": "8",
+      "name": "Sản phẩm 8",
+      "image": "ảnh 8",
+      "price": "88"
+    }
+  ]
+}
