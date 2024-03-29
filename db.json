@@ -29,24 +29,6 @@
       "image": "img/product-10.jpg",
       "price": 7,
       "id": "5"
-    },
-    {
-      "name": "name 6",
-      "image": "img/product-11.jpg",
-      "price": 45,
-      "id": "6"
-    },
-    {
-      "name": "name 7",
-      "image": "img/product-12.jpg",
-      "price": 13,
-      "id": "7"
-    },
-    {
-      "id": "8",
-      "name": "Sản phẩm 8",
-      "image": "ảnh 8",
-      "price": "88"
     }
   ]
 }

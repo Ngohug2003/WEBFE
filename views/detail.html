@@ -6,33 +6,57 @@
     <!-- Khu vực id -->
     <div class="mt-3">
         <span class="form-label">ID:</span>
-        <input class="form-control" type="text" ng-model="product.id">
+        <input disabled class="form-control" type="text" ng-model="product.id">
     </div>
 
     <!-- Khu vực tên -->
     <div class="mt-3">
         <span class="form-label">Name</span>
-        <input class="form-control" type="text" ng-model="product.name">
+        <input disabled class="form-control" type="text" ng-model="product.name">
 
     </div>
 
     <!-- Khu vực ảnh -->
     <div class="mt-3">
         <span class="form-label">Ảnh:</span>
-        <input class="form-control" type="text" ng-model="product.image">
+        <input disabled class="form-control" type="text" ng-model="product.image">
     
     </div>
 
     <!-- Khu vực danh mục -->
     <div class="mt-3">
         <span class="form-label">Price:</span>
-        <input class="form-control" type="text" ng-model="product.price">
+        <input disabled class="form-control" type="text" ng-model="product.price">
       
     </div>
 
     <!-- Khu vực button submit -->
     <div class="mt-3 text-center">
-        <button ng-click="onClickAdd()" class="btn btn-success" >Tạo mới</button>
+        <a  href="#!/" class="btn btn-success" >Quay lại</a>
+        <button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-danger" >Xóa</button>
     </div>
-
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Xác nhận xóa</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xóa <strong>"{{product.name}}"</strong> không?
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button class="btn btn-danger" ng-click="onClickDelete()">Xác nhận xóa</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
 </form>

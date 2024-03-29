@@ -19,7 +19,8 @@
             </td>
             <td>{{item.price}}</td>
             <td>
-                <a class="btn btn-danger " href="">Xóa</a>
+                <button ng-click="onDelete(item.id)">Delete Product</button>
+
                 <a class="btn btn-warning" href="#!edit/{{item.id}}">Sửa</a>
                 <a class="btn btn-secondary" href="#!detail/{{item.id}}">Xem</a>
             </td>
